@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bvgvonnec6scs"]
+
+[ext_resource type="Script" uid="uid://cdy2kc6uh2jid" path="res://battlefield.gd" id="1_hy033"]
+[ext_resource type="Script" uid="uid://bxugqnugtnuf1" path="res://player.gd" id="2_4y0t7"]
+[ext_resource type="Texture2D" uid="uid://qxrxj8tkwm4y" path="res://banga.png" id="3_fxwnf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vsh2u"]
+atlas = ExtResource("3_fxwnf")
+region = Rect2(1, 1, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkjg1"]
+atlas = ExtResource("3_fxwnf")
+region = Rect2(67, 1, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8d5v"]
+atlas = ExtResource("3_fxwnf")
+region = Rect2(100, 1, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y8rib"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vsh2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkjg1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vsh2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8d5v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="battlefield" type="Node2D" unique_id=1252648142]
+script = ExtResource("1_hy033")
+
+[node name="Player" type="Node2D" parent="." unique_id=403388211]
+script = ExtResource("2_4y0t7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1489542316]
+sprite_frames = SubResource("SpriteFrames_y8rib")
+frame = 1
+frame_progress = 0.1645671

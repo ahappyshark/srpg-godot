@@ -1,0 +1,26 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+.mono/
+*.translation
+*.import
+
+# Exported builds
+/exports/
+/builds/
+/dist/
+/export/
+
+# Platform-specific output
+/android/
+/ios/
+/macos/
+/linux/
+/windows/
+/web/
+
+# Editor and OS artifacts
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
