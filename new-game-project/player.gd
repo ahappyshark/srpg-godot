@@ -1,7 +1,7 @@
 extends Node2D
 class_name Player
 
-@export var cell_size: int = 64
+@export var cell_size: int = 32
 @export var move_range: int = 4
 @export var can_fly: bool = false
 @export var move_time_per_tile: float = 0.08

@@ -15,6 +15,13 @@ run/main_scene="uid://bvgvonnec6scs"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

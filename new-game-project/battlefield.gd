@@ -2,7 +2,7 @@ extends Node2D
 
 @export var cols: int = 8
 @export var rows: int = 8
-@export var cell_size: int = 64
+@export var cell_size: int = 32
 @export var damage_penalty: int = 6
 
 @onready var player: Player = $Player
