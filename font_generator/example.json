@@ -1,0 +1,40 @@
+{
+	"font_name": "your_font_name",
+	"font_file_path": "res://your_font_file.fnt",
+	"texture_file_path": "your_image_file.png",
+	"font_size": 16,
+	"is_bold": 0,
+	"is_italic": 0,
+	"line_height": 14,
+	"base": 14,
+	"char_width": 9,
+	"char_height": 16,
+	"img_width": 1152,
+	"img_height": 16,
+	"xadvance_default": 7,
+	"xadvances": [
+		{
+			"xadvance": 9,
+			"characters": ["m", "[", "]"]
+		},
+		{
+			"xadvance": 6,
+			"characters": ["a", "h", "o", "p", "r"]
+		},
+		{
+			"xadvance": 5,
+			"characters": ["b", "c", "d","e","g" ,"l", "s", "1"]
+		},
+		{
+			"xadvance": 4,
+			"characters": ["f", "i", "t","."]
+		}
+	],
+	"kerning": [
+		{
+			"first": ".",
+			"second": ".",
+			"amount": -10
+		}
+	]
+}
